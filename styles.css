@@ -1,11 +1,15 @@
 img {
     height: auto;
-    width: 500px;
+    width: 300px;
 }
 
 body {
     background-color: #111111;
-    color: #6A5ACD;
     font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    margin: 50px;
 }
 
+h1, h2 {
+    color: #6A5ACD;
+}
