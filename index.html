@@ -1,112 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tam Tyler Tran | Portfolio</title>
-    <link rel="shortcut icon" href="images/3t-logo.png">
-    <link rel="stylesheet" href="pending-styles.css">
-    <link rel="stylesheet" href="pending-index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@300;800&family=Righteous&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8f167b808f.js" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@300;600&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 </head>
 <body>
-
-    <!-- New Nav Bar -->
-    <div class="nav-section">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
-            <label class="logo"><a href="https://tylerred19.github.io">Tam Tyler Tran <i class="fas fa-cocktail" style="color: #E0AA58;"></i></a></label>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume-tyler-tran.pdf">Resume</a></li>
-                <li><a href="others.html">Others</a></li>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #000000;">
+        <div class="container">
+            <a class="navbar-brand" href="#">TAMTYLERTRAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="draft-projects.html">Projects Page</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">PacMen Exercise</a></li>
+                        <li><a class="dropdown-item" href="#">Eye Exercise</a></li>
+                        <li><a class="dropdown-item" href="#">Real Time Bus Tracking</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Others</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li> -->
             </ul>
-        </nav>
-    </div>
-
-    <!-- Margin Top for Nav Bar -->
-    <div class="nav-margin"></div>
-
-    <!-- <div class="intro-background">
-        <div class="index-intro">
-            <h1 class="index-intro-1">Hi! I'm Tyler. &#9787;</h1>
-            <p>Product Designer who would like to bring some meaningful and fun interactions to users.</p>
-            <p>1. Part-Time Product Designer @ [<a class="home-link" href="https://www.getpupil.com/">Pupil</a>]</p>
-            <p>2. UX/UI Design Intern @ [<a class="home-link" href="https://www.pareto.care/">Pareto Care</a>]</p>
-            <p>3. UX Apprentice @ [<a class="home-link" href="https://www.dexcom.com/">Dexcom</a>]</p>
-            <div class="view-projects"><button type="button" onclick="smoothScroll(document.getElementById('second'))">View Projects &#8595;</button></div>
-        </div>
-    </div> -->
-
-    <div class="project-wrapper" style="padding-top: 10px">
-        <h1 class="index-intro-1">A Daydreamer, A Night-Tinkerer</h1>
-        <p class="tyme-link">[WILL UPDATE THIS LATER!] Tyler is a UX Designer, Developer, and Researcher who would like to bring simple, meaningful, and fun experiences to everyone.</p>
-        <div class="view-projects">Featured Works &#8595;</div>
-    </div>
-
-    <div id="second" class="projects-section-filler">
-        <p>filler</p>
-    </div>
-
-    <div class="project-wrapper">
-        <div class="project-columns">
-            <div class="card">
-                <a href="https://www.notion.so/Case-Study-Social-Economy-Action-Research-Foundation-41c4be40596746728b267335a84ed510?pvs=4"><img src="images/home/dfg-index.png" alt="DFGxSEAR" style="width:100%"></a>
-            </div>
-            <div class="project-container">
-                <h3><b>Social Economy Action Research Foundation</b></h3>
-                <p>Designing an Android mobile app for the 40 community-based enterprises in the Philippines</p>
-                <p class="project-type">PRODUCT DESIGN</p> 
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             </div>
         </div>
-        <div class="project-columns-2">
-            <div class="project-container container-2">
-                <h3><b>Daily UI Challenge</b></h3>
-                <p>Participating the challenge to improve my UI Design skills</p>
-                <p class="project-type">UI DESIGN</p> 
-            </div>
-            <div class="card card-2">
-                <a href="https://www.figma.com/file/gRspGPfNHoYGhHuJeXDDxJ/TamTylerTran---100-Daily-UI-Design-Challenge?node-id=0%3A1&t=KPPfkGBqaNX0MjXy-1"><img src="images/home/ui-challenge-index.png" alt="UI-Design" style="width:100%"></a>
-            </div>
-        </div>
-        <div class="project-columns">
-            <div class="card">
-                <a href="relayplay.html"><img src="images/home/relayplay-index.png" alt="RelayPlay" style="width:100%"></a>
-            </div>
-            <div class="project-container">
-                <h3><b>RelayPlay</b></h3>
-                <p>Redesign a platform recommending people where to enjoy experiences</p>
-                <p class="project-type">PRODUCT DESIGN</p>
-            </div>
-        </div>
-        <div class="project-columns-2">
-            <div class="project-container container-2 container-last">
-                <h3><b>Kumi</b></h3>
-                <p>Design an online learning platform for lower-income middle and high schools</p>
-                <p class="project-type">DESIGN INTERNSHIP</p>
-            </div>
-            <div class="card card-2">
-                <a href="kumi.html"><img src="images/home/kumi-index.png" alt="Kumi" style="width:100%"></a>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="tyler-footer">
-            <div>CREATED WITH <i class="far fa-heart"></i> and <i class="fas fa-ice-cream"></i></div>
-            <div class="tyler-footer-icons">
-                <a href="mailto:tamtranht02@gmail.com"><i class="far fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/tamtranht02"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </div>
-
+    </nav>
+    <h1 style="font-weight: 600; margin: 5%;">Tam's Portfolio</h1>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
