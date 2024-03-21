@@ -19,6 +19,7 @@
 /* View Projects */
 .view-projects {
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -113,6 +114,13 @@
 /* Footer for Index Page */
 .tyler-footer {
     margin-top: 50px;
+    background-color: #272A31;
+    color: white;
+    font-size: 40px;
+    margin-top: 1.5vw;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Responsive For Cards */
