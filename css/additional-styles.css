@@ -1,0 +1,147 @@
+/* Color Selection */
+::selection {
+    background: #E0AA58;
+    color: #202327;
+}
+::-moz-selection {
+    background: #E0AA58;
+    color: #202327;
+}
+
+/* Intro Background */
+.intro-background {
+    background-image: url("images/test-bg.png");
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+/* View Projects */
+.view-projects {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Projects Section */
+.projects-section-filler {
+    background-color: #111111;
+    color: #111111;
+    padding-top: 10px;
+}
+
+/* Project Wrapper */
+.project-wrapper {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+/* Project Columns */
+.project-columns {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-gap: 40px;
+    margin-bottom: 50px;
+}
+.project-columns-2 {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Card Style */
+.card {
+    transition: 0.3s;
+    width: 100%;
+}
+.card img {
+    border-radius: 20px;
+    box-shadow: -3px -3px 7px #191919, 3px 3px 5px #191919;
+}
+.card img:hover {
+    box-shadow: 0 8px 16px 0 #353535;
+    transform: translate3D(0,-1px,0) scale(0.93);
+    /* box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04); */
+    transition: all .4s ease;
+}
+
+/* Project Container */
+.project-container {
+    /* margin-top: 25px; */
+    text-align: center;
+    margin: auto;
+}
+.project-container h3 {
+    font-size: 37px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    color: #E0AA58;
+    font-family: 'Koulen', cursive;
+    line-height: 45px;
+}
+.project-type {
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    color: #808DAD;
+    font-weight: lighter;
+}
+
+/* Index Intro */
+.index-intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffffff;
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px 30px 30px 30px;
+}
+.index-intro-1 {
+    font-size: 11vw;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    font-family: 'Koulen', cursive;
+    line-height: 11vw;
+    font-weight: bolder;
+}
+
+/* Footer for Index Page */
+.tyler-footer {
+    margin-top: 50px;
+}
+
+/* Responsive For Cards */
+@media (max-width: 858px) {
+    .project-columns, .project-columns-2 {
+        grid-template-columns: 1fr;
+    }
+    .card-2 {
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    .project-container h3 {
+        margin-top: 7px;
+        margin-bottom: -15px;
+    }
+    .project-container {
+        margin-bottom: 35px;
+    }
+    .container-last {
+        margin-bottom: 0;
+    }
+    .index-intro-1 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 555px) {
+    .index-intro {
+        width: 90%
+    }
+}
