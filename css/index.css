@@ -1,3 +1,13 @@
+/* Color Selection */
+::selection {
+    background: #E0AA58;
+    color: #202327;
+}
+::-moz-selection {
+    background: #E0AA58;
+    color: #202327;
+}
+
 /* Intro Background */
 .intro-background {
     background-image: url("images/test-bg.png");
@@ -6,19 +16,10 @@
     padding-bottom: 95px;
 }
 
-/* Pupil Link */
-.tyme-link a {
-    font-weight: 700;
-    color: #FFDD00;
-}
-.tyme-link a:hover {
-    text-decoration: underline;
-    color: #00F5FA;
-}
-
 /* View Projects */
 .view-projects {
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -51,15 +52,15 @@
 }
 
 /* Card Style */
-.card {
+.project-card {
     transition: 0.3s;
     width: 100%;
 }
-.card img {
+.project-card img {
     border-radius: 20px;
     box-shadow: -3px -3px 7px #191919, 3px 3px 5px #191919;
 }
-.card img:hover {
+.project-card img:hover {
     box-shadow: 0 8px 16px 0 #353535;
     transform: translate3D(0,-1px,0) scale(0.93);
     /* box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04); */
@@ -75,7 +76,7 @@
 .project-container h3 {
     font-size: 37px;
     margin-top: -10px;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
     color: #E0AA58;
     font-family: 'Koulen', cursive;
     line-height: 45px;
@@ -103,15 +104,23 @@
 }
 .index-intro-1 {
     font-size: 11vw;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin-top: 125px;
+    margin-bottom: 30px;
     font-family: 'Koulen', cursive;
-    line-height: 10.5vw;
+    line-height: 11vw;
+    font-weight: bolder;
 }
 
 /* Footer for Index Page */
 .tyler-footer {
     margin-top: 50px;
+    background-color: #272A31;
+    color: white;
+    font-size: 40px;
+    margin-top: 1.5vw;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Responsive For Cards */
@@ -119,13 +128,13 @@
     .project-columns, .project-columns-2 {
         grid-template-columns: 1fr;
     }
-    .card-2 {
+    .project-card-2 {
         grid-row-start: 0;
         grid-row-end: 1;
     }
     .project-container h3 {
-        margin-top: 7px;
-        margin-bottom: -15px;
+        margin-top: 25px;
+        /* margin-bottom: -15px; */
     }
     .project-container {
         margin-bottom: 35px;

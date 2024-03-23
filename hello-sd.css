@@ -1,0 +1,20 @@
+img {
+    height: auto;
+    width: 300px;
+}
+
+.beach-img {
+    height: auto;
+    width: 700px;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    margin: 50px;
+}
+
+h1, h2 {
+    color: #6A5ACD;
+}
